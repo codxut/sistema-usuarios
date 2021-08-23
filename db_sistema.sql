@@ -23,6 +23,8 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
+CREATE DATABASE db_sistema;
+
 --
 -- Estructura de tabla para la tabla `rols`
 --

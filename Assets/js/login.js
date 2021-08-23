@@ -6,7 +6,7 @@ $('#formLogin').submit(function(e) {
 		username: txtUsername,
 		password: txtPass
 	};
-	const url = baseUrl + "home/login";
+	const url = baseUrl + "home/log";
 	$.post(url, obj, function(response) {
 		const data = JSON.parse(response);
 		if (data.status) {

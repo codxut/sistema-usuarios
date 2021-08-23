@@ -24,7 +24,7 @@
 
 		public function loginRol(int $id)
 		{
-			$query = "SELECT u.id_user, u.name_user, u.lastname_user, r.id_rol, r.name_rol FROM users u INNER JOIN rols r ON u.id_user = r.id_rol WHERE u.id_user = ?";
+			$query = "SELECT u.id_user, u.name_user, u.lastname_user, r.id_rol, r.name_rol FROM users u INNER JOIN rols r ON u.id_rol = r.id_rol WHERE u.id_user = ?";
 			$arrData = [$id];
 			$result = $this->get($query, $arrData);
 

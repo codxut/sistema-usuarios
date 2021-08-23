@@ -23,7 +23,7 @@
 			$this->views->getView($this, "home", $data);
 		}
 
-		public function login()
+		public function log()
 		{
 			$username = $_POST['username'];
 			$password = $_POST['password'];
@@ -37,7 +37,8 @@
 			} else {
 				$response = ['status' => false, 'msg' => 'Usuario incorrecto'];
 			}
-			echo json_encode($response);
+			$json = json_encode($response);
+			echo $json;
 		}
 
 
